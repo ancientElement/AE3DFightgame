@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-2107564052939936885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46e7119e65d2418cb4afbc0aefffc8a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: AEActionInterruptTimeClip
+  StartID: 0
+  Duration: 29
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d709fa1127145c7a682650597978990, type: 3}
+  m_Name: "\u524D\u9762\u53D7\u4F24\u8F7B\u5FAE"
+  m_EditorClassIdentifier: 
+  Tracks:
+  - rid: 3150064743732477959
+  - rid: 3150064743732477960
+  Duration: 60
+  FPS: 60
+  InterruptOtherTagList: []
+  Priority: 0
+  WhichKeyToInterval: []
+  NextNaltureAction: {fileID: 11400000, guid: 0264d26036939bf45b703196b9a0d9a7, type: 2}
+  MotionInfo:
+    ControlMove: 0
+    ApplayRotate: 0
+    MoveSpeedRate: 1
+    UseRootMotionMove: 1
+    UseRootMotionRotate: 0
+    RMVelocity: {x: 0.000000016213699, y: -8.232951e-10, z: 0.21480066}
+    DesForwordDirection: 0
+    RotateToCameraForward: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 3150064743732477959
+      type: {class: AEActionAnimTrack, ns: AE_SkillEditor_Plus_Custom.Animation.Track, asm: Assembly-CSharp}
+      data:
+        Clips:
+        - {fileID: 4712025412266825938}
+    - rid: 3150064743732477960
+      type: {class: AEActionInterruptTimeTrack, ns: AE_SkillEditor_Plus_Custom.Animation.Track, asm: Assembly-CSharp}
+      data:
+        Clips:
+        - {fileID: -2107564052939936885}
+--- !u!114 &4712025412266825938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35dc1f4d25b24d5882dce72d3637dfdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: AEActionAnimClip
+  StartID: 0
+  Duration: 60
+  AnimationClip: {fileID: 7400000, guid: cbf69ff624d100f4496c4b6224e63a2b, type: 2}
+  FadeIn: 0.05
+  StartPosition: {x: 0, y: 0, z: 0}
+  isAnimatorState: 0
+  StateName: 

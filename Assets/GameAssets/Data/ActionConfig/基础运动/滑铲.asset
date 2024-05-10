@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-28484557269440253
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35dc1f4d25b24d5882dce72d3637dfdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: AEActionAnimClip
+  StartID: 0
+  Duration: 62
+  AnimationClip: {fileID: 7400000, guid: dcc39b5ee01b8034d85c69f270a98e99, type: 2}
+  FadeIn: 0
+  StartPosition: {x: 0, y: 0, z: 0}
+  isAnimatorState: 0
+  StateName: 
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d709fa1127145c7a682650597978990, type: 3}
+  m_Name: "\u6ED1\u94F2"
+  m_EditorClassIdentifier: 
+  Tracks:
+  - rid: 3150064700377530375
+  - rid: 3150064700377530376
+  Duration: 62
+  FPS: 60
+  InterruptOtherTagList: []
+  Priority: 0
+  WhichKeyToInterval:
+  - "\u6ED1\u94F2"
+  NextNaltureAction: {fileID: 11400000, guid: 0264d26036939bf45b703196b9a0d9a7, type: 2}
+  MotionInfo:
+    ControlMove: 1
+    ApplayRotate: 1
+    MoveSpeedRate: 1.6
+    UseRootMotionMove: 0
+    UseRootMotionRotate: 0
+    RMVelocity: {x: 0.90530914, y: 0, z: -4.9112926}
+    DesForwordDirection: 0
+    RotateToCameraForward: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 3150064700377530375
+      type: {class: AEActionAnimTrack, ns: AE_SkillEditor_Plus_Custom.Animation.Track, asm: Assembly-CSharp}
+      data:
+        Clips:
+        - {fileID: -28484557269440253}
+    - rid: 3150064700377530376
+      type: {class: AEActionInterruptTimeTrack, ns: AE_SkillEditor_Plus_Custom.Animation.Track, asm: Assembly-CSharp}
+      data:
+        Clips:
+        - {fileID: 2476322329719237338}
+--- !u!114 &2476322329719237338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46e7119e65d2418cb4afbc0aefffc8a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: AEActionInterruptTimeClip
+  StartID: 0
+  Duration: 13

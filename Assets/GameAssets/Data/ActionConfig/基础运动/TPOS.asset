@@ -1,0 +1,185 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8942494953404468787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb3715e142344794b4c27da400c0cbb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: "\u53F3\u811A"
+  StartID: 10
+  Duration: 100
+--- !u!114 &-7412953977468492763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb3715e142344794b4c27da400c0cbb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: "\u5DE6\u811A"
+  StartID: 3
+  Duration: 100
+--- !u!114 &-5972460573427462265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb3715e142344794b4c27da400c0cbb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: "\u5DE6\u624B"
+  StartID: 3
+  Duration: 60
+--- !u!114 &-3212310378303104795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb3715e142344794b4c27da400c0cbb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: "\u53F3\u624B"
+  StartID: 7
+  Duration: 100
+--- !u!114 &-2900671542696359924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35dc1f4d25b24d5882dce72d3637dfdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: AEActionAnimClip
+  StartID: 0
+  Duration: 100
+  AnimationClip: {fileID: 7400000, guid: ef6da802034bf38468b30a4c33879eff, type: 2}
+  FadeIn: 0
+  StartPosition: {x: 0, y: 0, z: 0}
+  isAnimatorState: 0
+  StateName: 
+--- !u!114 &-1987743815837671453
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb3715e142344794b4c27da400c0cbb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: "\u5DE6\u8098"
+  StartID: 8
+  Duration: 100
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d709fa1127145c7a682650597978990, type: 3}
+  m_Name: TPOS
+  m_EditorClassIdentifier: 
+  Tracks:
+  - rid: 3150064743732477952
+  - rid: 3150064743732477953
+  - rid: 3150064743732477954
+  - rid: 3150064743732477955
+  - rid: 3150064743732477956
+  - rid: 3150064743732477957
+  - rid: 3150064743732477958
+  Duration: 110
+  FPS: 0
+  InterruptOtherTagList: []
+  Priority: 0
+  WhichKeyToInterval: []
+  NextNaltureAction: {fileID: 0}
+  MotionInfo:
+    ControlMove: 0
+    ApplayRotate: 0
+    MoveSpeedRate: 0
+    UseRootMotionMove: 0
+    UseRootMotionRotate: 0
+    RMVelocity: {x: 0, y: 0, z: 0}
+    DesForwordDirection: 0
+    RotateToCameraForward: 0
+  references:
+    version: 2
+    RefIds:
+    - rid: 3150064743732477952
+      type: {class: AEActionAnimTrack, ns: AE_SkillEditor_Plus_Custom.Animation.Track, asm: Assembly-CSharp}
+      data:
+        Clips:
+        - {fileID: -2900671542696359924}
+    - rid: 3150064743732477953
+      type: {class: AttackDetectionTrackTrack, ns: AE_SkillEditor_Plus_Custom.Track, asm: Assembly-CSharp}
+      data:
+        Clips:
+        - {fileID: -5972460573427462265}
+    - rid: 3150064743732477954
+      type: {class: AttackDetectionTrackTrack, ns: AE_SkillEditor_Plus_Custom.Track, asm: Assembly-CSharp}
+      data:
+        Clips:
+        - {fileID: -3212310378303104795}
+    - rid: 3150064743732477955
+      type: {class: AttackDetectionTrackTrack, ns: AE_SkillEditor_Plus_Custom.Track, asm: Assembly-CSharp}
+      data:
+        Clips:
+        - {fileID: -1987743815837671453}
+    - rid: 3150064743732477956
+      type: {class: AttackDetectionTrackTrack, ns: AE_SkillEditor_Plus_Custom.Track, asm: Assembly-CSharp}
+      data:
+        Clips:
+        - {fileID: 4060321220948579939}
+    - rid: 3150064743732477957
+      type: {class: AttackDetectionTrackTrack, ns: AE_SkillEditor_Plus_Custom.Track, asm: Assembly-CSharp}
+      data:
+        Clips:
+        - {fileID: -7412953977468492763}
+    - rid: 3150064743732477958
+      type: {class: AttackDetectionTrackTrack, ns: AE_SkillEditor_Plus_Custom.Track, asm: Assembly-CSharp}
+      data:
+        Clips:
+        - {fileID: -8942494953404468787}
+--- !u!114 &4060321220948579939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb3715e142344794b4c27da400c0cbb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: "\u53F3\u8098"
+  StartID: 6
+  Duration: 100

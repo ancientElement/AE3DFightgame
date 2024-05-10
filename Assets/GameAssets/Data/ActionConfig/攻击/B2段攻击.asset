@@ -1,0 +1,128 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8854577651184432000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46e7119e65d2418cb4afbc0aefffc8a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: AEActionInterruptTimeClip
+  StartID: 0
+  Duration: 38
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d709fa1127145c7a682650597978990, type: 3}
+  m_Name: "B2\u6BB5\u653B\u51FB"
+  m_EditorClassIdentifier: 
+  Tracks:
+  - rid: 3150064689526865923
+  - rid: 3150064689526865924
+  - rid: 3150064689526865937
+  - rid: 3150064700377530373
+  Duration: 54
+  FPS: 60
+  InterruptOtherTagList:
+  - {fileID: 11400000, guid: 65bf6613ded9a87498467f74ca335007, type: 2}
+  - {fileID: 11400000, guid: adca0bb695fecde4c97cdb0ba7109dce, type: 2}
+  Priority: 0
+  WhichKeyToInterval:
+  - AttackB
+  NextNaltureAction: {fileID: 11400000, guid: 0264d26036939bf45b703196b9a0d9a7, type: 2}
+  MotionInfo:
+    ControlMove: 0
+    ApplayRotate: 0
+    MoveSpeedRate: 1
+    UseRootMotionMove: 1
+    UseRootMotionRotate: 0
+    RMVelocity: {x: 0.17335306, y: 0.000000002452156, z: 1.009459}
+    DesForwordDirection: 0
+    RotateToCameraForward: 1
+  references:
+    version: 2
+    RefIds:
+    - rid: 3150064689526865923
+      type: {class: AEActionAnimTrack, ns: AE_SkillEditor_Plus_Custom.Animation.Track, asm: Assembly-CSharp}
+      data:
+        Clips:
+        - {fileID: 5376130307618295514}
+    - rid: 3150064689526865924
+      type: {class: AEActionInterruptTimeTrack, ns: AE_SkillEditor_Plus_Custom.Animation.Track, asm: Assembly-CSharp}
+      data:
+        Clips:
+        - {fileID: -8854577651184432000}
+    - rid: 3150064689526865937
+      type: {class: AEAudioTrack, ns: AE_SkillEditor_Plus.Example.BuiltTracks.Audio, asm: Assembly-CSharp}
+      data:
+        Clips:
+        - {fileID: 4875557248979637351}
+    - rid: 3150064700377530373
+      type: {class: AttackDetectionTrackTrack, ns: AE_SkillEditor_Plus_Custom.Track, asm: Assembly-CSharp}
+      data:
+        Clips:
+        - {fileID: 2188135035834705718}
+--- !u!114 &2188135035834705718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb3715e142344794b4c27da400c0cbb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: "\u53F3\u811A"
+  StartID: 22
+  Duration: 21
+--- !u!114 &4875557248979637351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7252bb5ce3b241e490494977bfe86cf8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: AEAudioClip
+  StartID: 33
+  Duration: 20
+  AudioClip: {fileID: 8300000, guid: 58a5d36d6b134014ea5623d9802082e2, type: 3}
+  Position: {x: 0, y: 0, z: 0}
+  Volume: 1
+--- !u!114 &5376130307618295514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35dc1f4d25b24d5882dce72d3637dfdb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Name: AEActionAnimClip
+  StartID: 0
+  Duration: 54
+  AnimationClip: {fileID: 7400000, guid: bfcabf54c3c6dbc4fa9dcaf14c963a0a, type: 2}
+  FadeIn: 0.05
+  StartPosition: {x: 0, y: 0, z: 0}
+  isAnimatorState: 0
+  StateName: 
