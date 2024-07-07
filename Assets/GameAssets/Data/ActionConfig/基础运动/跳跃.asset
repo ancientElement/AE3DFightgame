@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: AEActionAnimClip
   StartID: 0
-  Duration: 48
-  AnimationClip: {fileID: 7400000, guid: 1591f0df545737c4c941106468ddb455, type: 2}
-  FadeIn: 0.1
+  Duration: 84
+  AnimationClip: {fileID: 7400000, guid: fc1e4f728b5a4f743a3e9bb23b028140, type: 2}
+  FadeIn: 0
   StartPosition: {x: 0, y: 0, z: 0}
   isAnimatorState: 0
   StateName: 
@@ -36,29 +36,31 @@ MonoBehaviour:
   - rid: 3150064678645530640
   - rid: 3150064678645530641
   - rid: 3150064689526865943
-  Duration: 48
+  Duration: 84
   FPS: 60
   InterruptOtherTagList:
   - {fileID: 11400000, guid: 0264d26036939bf45b703196b9a0d9a7, type: 2}
   - {fileID: 11400000, guid: 65bf6613ded9a87498467f74ca335007, type: 2}
-  - {fileID: 11400000, guid: c0968d0d6a6c29840baf195443a2dc51, type: 2}
+  - {fileID: 11400000, guid: 54e88c167fe9bba4ea0dd8641e65773b, type: 2}
   - {fileID: 11400000, guid: 7ec1db84fdcf3514799168d734c0a2e9, type: 2}
   - {fileID: 11400000, guid: adca0bb695fecde4c97cdb0ba7109dce, type: 2}
-  - {fileID: 11400000, guid: 54e88c167fe9bba4ea0dd8641e65773b, type: 2}
+  - {fileID: 11400000, guid: c0968d0d6a6c29840baf195443a2dc51, type: 2}
   - {fileID: 11400000, guid: 6a3b51e5754bd8d4cad07cecb5ec0e58, type: 2}
-  - {fileID: 11400000, guid: 5f6524e78a8952d4d9dc9f96bdff22f9, type: 2}
+  - {fileID: 11400000, guid: 44058a8bf5e1d8f44afce2e0546073c1, type: 2}
+  - {fileID: 11400000, guid: 5426e0400907fab40a4fcaf1ea6809be, type: 2}
   - {fileID: 11400000, guid: 2c099335ad0b77d43ade37f4b0a23380, type: 2}
   Priority: 0
+  AnimatorPamrams: []
   WhichKeyToInterval:
   - Jump
-  NextNaltureAction: {fileID: 11400000, guid: 0264d26036939bf45b703196b9a0d9a7, type: 2}
+  NextNaltureAction: {fileID: 11400000, guid: 828e8dd06fd5a5b41a56439bd589625e, type: 2}
   MotionInfo:
     ControlMove: 1
     ApplayRotate: 1
     MoveSpeedRate: 1.2
     UseRootMotionMove: 1
     UseRootMotionRotate: 0
-    RMVelocity: {x: 0.000000013538569, y: -0.79467404, z: 0.00000007078384}
+    RMVelocity: {x: -0.00000053942654, y: -6.3255634, z: 0.00000019517266}
     DesForwordDirection: 0
     RotateToCameraForward: 0
   references:
@@ -93,7 +95,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: AEActionInterruptTimeClip
   StartID: 0
-  Duration: 43
+  Duration: 18
 --- !u!114 &6375585264669327787
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,7 +110,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: AEAudioClip
   StartID: 3
-  Duration: 36
+  Duration: 41
   AudioClip: {fileID: 8300000, guid: 28406bf68add30e4e89d6cd063fb84e6, type: 3}
   Position: {x: 0, y: 0, z: 0}
   Volume: 0

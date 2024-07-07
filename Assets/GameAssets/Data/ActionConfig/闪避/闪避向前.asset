@@ -60,7 +60,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: adca0bb695fecde4c97cdb0ba7109dce, type: 2}
   - {fileID: 11400000, guid: c0968d0d6a6c29840baf195443a2dc51, type: 2}
   - {fileID: 11400000, guid: 6a3b51e5754bd8d4cad07cecb5ec0e58, type: 2}
+  - {fileID: 11400000, guid: ee9d905e6c7073a48a31d729a339210c, type: 2}
+  - {fileID: 11400000, guid: 828e8dd06fd5a5b41a56439bd589625e, type: 2}
   Priority: 0
+  AnimatorPamrams:
+  - Name: Speed
+    ValueType: 1
+    CompareType: 2
+    Value: 5
   WhichKeyToInterval:
   - SlideForw
   NextNaltureAction: {fileID: 11400000, guid: 0264d26036939bf45b703196b9a0d9a7, type: 2}
@@ -70,7 +77,7 @@ MonoBehaviour:
     MoveSpeedRate: 1.2
     UseRootMotionMove: 1
     UseRootMotionRotate: 0
-    RMVelocity: {x: -0.09316562, y: 0, z: -0.13362896}
+    RMVelocity: {x: 0.12258035, y: 0, z: 0.10626707}
     DesForwordDirection: 0
     RotateToCameraForward: 1
   references:

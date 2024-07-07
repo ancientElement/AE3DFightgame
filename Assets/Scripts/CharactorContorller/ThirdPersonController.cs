@@ -342,7 +342,7 @@ namespace AEActionSystem
             // Debug.DrawLine(transform.position, transform.position + targetDirection, Color.red);
 
             // move the player
-            if (info.RMVelocity.y != 0) _verticalVelocity = info.RMVelocity.y;
+            if (info.UseRootMotionMove&&info.RMVelocity.y != 0) _verticalVelocity = info.RMVelocity.y;
             // MoveModel(delta, targetDirection, _speed, _verticalVelocity);
             _controller.Move(targetDirection.normalized * (_speed * delta) +
                              new Vector3(0.0f, _verticalVelocity, 0.0f) * delta);

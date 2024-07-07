@@ -42,6 +42,7 @@ MonoBehaviour:
   InterruptOtherTagList:
   - {fileID: 11400000, guid: 0264d26036939bf45b703196b9a0d9a7, type: 2}
   Priority: 0
+  AnimatorPamrams: []
   WhichKeyToInterval:
   - AttackB
   NextNaltureAction: {fileID: 11400000, guid: 0264d26036939bf45b703196b9a0d9a7, type: 2}
@@ -49,10 +50,11 @@ MonoBehaviour:
     ControlMove: 0
     ApplayRotate: 0
     MoveSpeedRate: 1
-    RotateToCameraForward: 1
     UseRootMotionMove: 1
     UseRootMotionRotate: 0
     RMVelocity: {x: 0.1172465, y: 5.837741e-10, z: 0.16967686}
+    DesForwordDirection: 0
+    RotateToCameraForward: 1
   references:
     version: 2
     RefIds:

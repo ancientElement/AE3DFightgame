@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-1910088776254780345
+--- !u!114 &-7373853259348142036
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: AEActionAnimClip
   StartID: 0
-  Duration: 60
-  AnimationClip: {fileID: 7400000, guid: 611ebbc41c8605b4ea645f70c4e8c9af, type: 2}
-  FadeIn: 0
+  Duration: 50
+  AnimationClip: {fileID: 7400000, guid: a276ba0566430f5458ccf1f44d75d5c1, type: 2}
+  FadeIn: 0.02
   StartPosition: {x: 0, y: 0, z: 0}
   isAnimatorState: 0
   StateName: 
@@ -30,62 +30,50 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d709fa1127145c7a682650597978990, type: 3}
-  m_Name: "\u95EA\u907F\u5411\u540E"
+  m_Name: "\u8DF3\u8DC3\u4E8C\u6BB5"
   m_EditorClassIdentifier: 
   Tracks:
-  - rid: 3150064689526865932
-  - rid: 3150064689526865933
-  - rid: 3150064689526865941
-  Duration: 60
+  - rid: 3150064678645530640
+  - rid: 3150064678645530641
+  - rid: 3150064689526865943
+  Duration: 50
   FPS: 60
   InterruptOtherTagList:
-  - {fileID: 11400000, guid: 0264d26036939bf45b703196b9a0d9a7, type: 2}
-  - {fileID: 11400000, guid: 856960b4895098545bec1f4fe8331588, type: 2}
-  - {fileID: 11400000, guid: 65bf6613ded9a87498467f74ca335007, type: 2}
-  - {fileID: 11400000, guid: 54e88c167fe9bba4ea0dd8641e65773b, type: 2}
-  - {fileID: 11400000, guid: 7ec1db84fdcf3514799168d734c0a2e9, type: 2}
-  - {fileID: 11400000, guid: adca0bb695fecde4c97cdb0ba7109dce, type: 2}
-  - {fileID: 11400000, guid: c0968d0d6a6c29840baf195443a2dc51, type: 2}
-  - {fileID: 11400000, guid: 6a3b51e5754bd8d4cad07cecb5ec0e58, type: 2}
+  - {fileID: 11400000, guid: 70075e48b281fdd4b8511c6722a65d14, type: 2}
   - {fileID: 11400000, guid: ee9d905e6c7073a48a31d729a339210c, type: 2}
-  - {fileID: 11400000, guid: 828e8dd06fd5a5b41a56439bd589625e, type: 2}
   Priority: 0
-  AnimatorPamrams:
-  - Name: Speed
-    ValueType: 1
-    CompareType: 2
-    Value: 5
+  AnimatorPamrams: []
   WhichKeyToInterval:
-  - SlideBack
-  NextNaltureAction: {fileID: 11400000, guid: 0264d26036939bf45b703196b9a0d9a7, type: 2}
+  - Jump
+  NextNaltureAction: {fileID: 11400000, guid: 828e8dd06fd5a5b41a56439bd589625e, type: 2}
   MotionInfo:
-    ControlMove: 0
-    ApplayRotate: 0
+    ControlMove: 1
+    ApplayRotate: 1
     MoveSpeedRate: 1.2
     UseRootMotionMove: 1
     UseRootMotionRotate: 0
-    RMVelocity: {x: 2.1321118, y: 0, z: -3.300863}
+    RMVelocity: {x: 0, y: 0, z: 0}
     DesForwordDirection: 0
-    RotateToCameraForward: 1
+    RotateToCameraForward: 0
   references:
     version: 2
     RefIds:
-    - rid: 3150064689526865932
+    - rid: 3150064678645530640
       type: {class: AEActionAnimTrack, ns: AE_SkillEditor_Plus_Custom.Animation.Track, asm: Assembly-CSharp}
       data:
         Clips:
-        - {fileID: -1910088776254780345}
-    - rid: 3150064689526865933
+        - {fileID: -7373853259348142036}
+    - rid: 3150064678645530641
       type: {class: AEActionInterruptTimeTrack, ns: AE_SkillEditor_Plus_Custom.Animation.Track, asm: Assembly-CSharp}
       data:
         Clips:
-        - {fileID: 700391886067022076}
-    - rid: 3150064689526865941
+        - {fileID: 5011280255450902107}
+    - rid: 3150064689526865943
       type: {class: AEAudioTrack, ns: AE_SkillEditor_Plus.Example.BuiltTracks.Audio, asm: Assembly-CSharp}
       data:
         Clips:
-        - {fileID: 6123901405794122787}
---- !u!114 &700391886067022076
+        - {fileID: 6375585264669327787}
+--- !u!114 &5011280255450902107
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -99,8 +87,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: AEActionInterruptTimeClip
   StartID: 0
-  Duration: 25
---- !u!114 &6123901405794122787
+  Duration: 37
+--- !u!114 &6375585264669327787
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -113,8 +101,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Name: AEAudioClip
-  StartID: 1
-  Duration: 58
-  AudioClip: {fileID: 8300000, guid: 90fb91c5d9f18df4183363d36d921429, type: 3}
+  StartID: 3
+  Duration: 36
+  AudioClip: {fileID: 8300000, guid: 28406bf68add30e4e89d6cd063fb84e6, type: 3}
   Position: {x: 0, y: 0, z: 0}
   Volume: 1

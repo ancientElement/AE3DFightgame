@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using AE_SkillEditor_Plus.RunTime;
 using UnityEditor;
 using UnityEngine;
@@ -21,9 +22,26 @@ namespace AEActionSystem
         public int Priority; //优先等级
 
         //public List<TagsEnum> ImportanctThenWhichTagList; //优先于哪些Tag
+        public List<AniamtorParamter> AnimatorPamrams; //动画状态机参数限制
         public List<string> WhichKeyToInterval; //哪些按键触发
 
         public ActionConfig NextNaltureAction; //下一个自然动作
         public MotionInfo MotionInfo;
+    }
+
+    [Serializable]
+    public class AniamtorParamter
+    {
+        public string Name;
+        [FormerlySerializedAs("Type")] public AnimatorControllerParameterType ValueType;
+        public CompareType CompareType;
+        public float Value;
+    }
+
+    public enum CompareType
+    {
+        Equal,
+        Bigger,
+        Less
     }
 }

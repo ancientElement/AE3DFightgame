@@ -24,6 +24,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 3f54fe94a54dca24b98d45ec2603963a, type: 2}
   - {fileID: 11400000, guid: 856960b4895098545bec1f4fe8331588, type: 2}
   Priority: 0
+  AnimatorPamrams: []
   WhichKeyToInterval:
   - Move
   - Sprint
@@ -32,10 +33,11 @@ MonoBehaviour:
     ControlMove: 1
     ApplayRotate: 1
     MoveSpeedRate: 1
-    RotateToCameraForward: 0
     UseRootMotionMove: 0
     UseRootMotionRotate: 0
     RMVelocity: {x: 0, y: 0, z: 0}
+    DesForwordDirection: 0
+    RotateToCameraForward: 0
   references:
     version: 2
     RefIds:
@@ -65,7 +67,7 @@ MonoBehaviour:
   StartID: 0
   Duration: 60
   AnimationClip: {fileID: 0}
-  FadeIn: 0.2
+  FadeIn: 0.1
   StartPosition: {x: 0, y: 0, z: 0}
   isAnimatorState: 1
   StateName: "\u57FA\u7840\u8FD0\u52A8"
@@ -83,4 +85,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: AEActionInterruptTimeClip
   StartID: 0
-  Duration: 2
+  Duration: 3

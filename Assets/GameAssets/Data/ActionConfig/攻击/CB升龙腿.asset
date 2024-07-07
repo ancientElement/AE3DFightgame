@@ -19,9 +19,9 @@ MonoBehaviour:
   - rid: 3150064700377530374
   Duration: 98
   FPS: 60
-  InterruptOtherTagList:
-  - {fileID: 11400000, guid: 2c099335ad0b77d43ade37f4b0a23380, type: 2}
+  InterruptOtherTagList: []
   Priority: 0
+  AnimatorPamrams: []
   WhichKeyToInterval:
   - AttackB
   NextNaltureAction: {fileID: 11400000, guid: 0264d26036939bf45b703196b9a0d9a7, type: 2}
@@ -31,7 +31,7 @@ MonoBehaviour:
     MoveSpeedRate: 1
     UseRootMotionMove: 1
     UseRootMotionRotate: 0
-    RMVelocity: {x: 0, y: 0, z: 0}
+    RMVelocity: {x: -0.0017702668, y: 3.4168807e-10, z: -0.089130074}
     DesForwordDirection: 0
     RotateToCameraForward: 1
   references:

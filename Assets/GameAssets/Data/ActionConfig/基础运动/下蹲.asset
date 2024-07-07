@@ -40,7 +40,9 @@ MonoBehaviour:
   - {fileID: 11400000, guid: adca0bb695fecde4c97cdb0ba7109dce, type: 2}
   - {fileID: 11400000, guid: c0968d0d6a6c29840baf195443a2dc51, type: 2}
   - {fileID: 11400000, guid: 6a3b51e5754bd8d4cad07cecb5ec0e58, type: 2}
+  - {fileID: 11400000, guid: 856960b4895098545bec1f4fe8331588, type: 2}
   Priority: 0
+  AnimatorPamrams: []
   WhichKeyToInterval:
   - "\u4E0B\u8E72"
   NextNaltureAction: {fileID: 0}
@@ -50,7 +52,7 @@ MonoBehaviour:
     MoveSpeedRate: 0.9
     UseRootMotionMove: 0
     UseRootMotionRotate: 0
-    RMVelocity: {x: 2.4187255, y: 0, z: -6.15563}
+    RMVelocity: {x: 0, y: 0, z: 0}
     DesForwordDirection: 0
     RotateToCameraForward: 1
   references:

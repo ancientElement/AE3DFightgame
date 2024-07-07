@@ -52,7 +52,7 @@ namespace AEActionSystem
                 TryGetComponent<VirtualThirdPersonController>(out tempVirtualThirdPersonController);
                 _thirdPersonrController = tempVirtualThirdPersonController;
             }
-            
+
             _thirdPersonrController.Init();
             EnterAction(allAction.ElementAt(StartAction));
 
@@ -175,6 +175,24 @@ namespace AEActionSystem
         {
             foreach (var item in allAction)
             {
+                bool shouldContinue = false; // 标志变量，用于指示是否应该跳过当前迭代
+
+                //判断是否符合条件
+                for (int i = 0; i < item.AnimatorPamrams.Count; i++)
+                {
+                    var param = item.AnimatorPamrams[i];
+                    float temp;
+                    if (!IsAnimatorParamsMeet(param, out temp))
+                    {
+                        Debug.Log("条件不符合 " + temp);
+                        // 如果条件成立，设置标志变量为true，并立即退出内部循环
+                        shouldContinue = true;
+                        break;
+                    }
+                }
+
+                if (shouldContinue) continue;
+
                 foreach (var key in item.WhichKeyToInterval)
                 {
                     // Debug.Log(key + "--" + item.Key);
@@ -191,6 +209,29 @@ namespace AEActionSystem
                     }
                 }
             }
+        }
+
+        private bool IsAnimatorParamsMeet(AniamtorParamter aniamtorParamter, out float value)
+        {
+            //取得Animator的参数
+            value = float.MinValue;
+            if (aniamtorParamter.ValueType == AnimatorControllerParameterType.Float)
+                value = Animator.GetFloat(aniamtorParamter.Name);
+            if (aniamtorParamter.ValueType == AnimatorControllerParameterType.Int)
+                value = Animator.GetInteger(aniamtorParamter.Name);
+            if (aniamtorParamter.ValueType == AnimatorControllerParameterType.Bool)
+                value = Animator.GetBool(aniamtorParamter.Name) ? 1 : 0;
+            if (value == float.MinValue)
+            {
+                Debug.LogWarning("不存在参数: " + aniamtorParamter.Name);
+                return false;
+            }
+
+            //判断条件是否成立
+            if (aniamtorParamter.CompareType == CompareType.Equal) return value == aniamtorParamter.Value;
+            if (aniamtorParamter.CompareType == CompareType.Bigger) return value > aniamtorParamter.Value;
+            if (aniamtorParamter.CompareType == CompareType.Less) return value < aniamtorParamter.Value;
+            return false;
         }
     }
 }

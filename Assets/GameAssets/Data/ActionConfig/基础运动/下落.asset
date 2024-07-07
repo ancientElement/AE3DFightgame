@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: AEActionInterruptTimeClip
   StartID: 0
-  Duration: 2
+  Duration: 12
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25,25 +25,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7d709fa1127145c7a682650597978990, type: 3}
-  m_Name: "\u7740\u9646"
+  m_Name: "\u4E0B\u843D"
   m_EditorClassIdentifier: 
   Tracks:
   - rid: 3150064678645530642
   - rid: 3150064678645530643
-  Duration: 3
+  Duration: 48
   FPS: 60
   InterruptOtherTagList: []
   Priority: 0
   AnimatorPamrams: []
   WhichKeyToInterval: []
-  NextNaltureAction: {fileID: 11400000, guid: 0264d26036939bf45b703196b9a0d9a7, type: 2}
+  NextNaltureAction: {fileID: 0}
   MotionInfo:
     ControlMove: 1
     ApplayRotate: 1
-    MoveSpeedRate: 1
+    MoveSpeedRate: 1.2
     UseRootMotionMove: 0
     UseRootMotionRotate: 0
-    RMVelocity: {x: 0, y: 0, z: 0}
+    RMVelocity: {x: -0.020862574, y: 0, z: 0.011679519}
     DesForwordDirection: 0
     RotateToCameraForward: 0
   references:
@@ -73,9 +73,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Name: AEActionAnimClip
   StartID: 0
-  Duration: 3
-  AnimationClip: {fileID: 7400000, guid: 9b462638f0564774cafac6a5b6dc405d, type: 2}
-  FadeIn: 0.05
+  Duration: 48
+  AnimationClip: {fileID: 7400000, guid: 22ace672d7c575349a4de87ffd103c45, type: 2}
+  FadeIn: 0.1
   StartPosition: {x: 0, y: 0, z: 0}
-  isAnimatorState: 1
-  StateName: "\u57FA\u7840\u8FD0\u52A8"
+  isAnimatorState: 0
+  StateName: 

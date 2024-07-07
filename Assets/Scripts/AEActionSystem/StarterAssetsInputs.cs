@@ -65,9 +65,9 @@ namespace AEActionSystem
 
         public void ActionKeyTriger(InputAction.CallbackContext ctx)
         {
-            if (ActionSystem.CanBeInterrupt && ctx.action.triggered)
+            if (ActionSystem.CanBeInterrupt && ctx.action.triggered && ctx.action.phase == InputActionPhase.Performed)
             {
-                UnityEngine.Debug.Log(ctx.action.name);
+                // UnityEngine.Debug.Log(ctx.action.name);
                 ActionSystem.ProcessInput(ctx.action.name);
             }
         }
